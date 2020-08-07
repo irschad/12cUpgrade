@@ -17,17 +17,14 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - context: Info # has an env_var called Username
-      - run: echo $Username
+      - context: Info # has an env_var called USER_NAME
+      - run: echo $USER_NAME
      
 workflows:
   # Name the workflow "welcome"
   welcome:
     # Run the welcome/run job in its own container
   test-env-vars:
-    jobs:
-      - build:
-          context: Info # has an env_var called Username
     jobs:
       - print_hello
       - print_world:
