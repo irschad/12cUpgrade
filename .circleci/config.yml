@@ -24,7 +24,6 @@ workflows:
   # Name the workflow "welcome"
   welcome:
     # Run the welcome/run job in its own container
-  test-env-vars:
     jobs:
       - print_hello
       - print_world:
