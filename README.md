@@ -1,2 +1,2 @@
-# 12cUpgrade
-For CI/CD setup for Fusion 12c Upgrade project
+# CIRCLECI
+For CI/CD setup using CircleCI
