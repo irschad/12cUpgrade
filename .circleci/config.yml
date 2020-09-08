@@ -36,6 +36,11 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run: echo $USER_NAME
+   my_job:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - print_pipeline_id
      
 workflows:
   # Name the workflow "welcome back"
@@ -51,8 +56,4 @@ workflows:
           requires:
             - print_world
       - print_var
-      - my_job:
-          docker:
-            - image: circleci/node:13.8.0
-          steps:
-           - print_pipeline_id
+      - my_job
