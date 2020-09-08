@@ -36,7 +36,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run: echo $USER_NAME
-   my_job:
+  my_job:
     docker:
       - image: circleci/node:13.8.0
     steps:
